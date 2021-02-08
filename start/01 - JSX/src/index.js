@@ -2,8 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
 
+const divStyle = {
+  color: 'blue',
+  fontSize: 70
+};
+
 const App = () => {
-  return <p>Hello</p>;
+  const naam = "Lucas";
+  return <p style={divStyle}>Ik ben {naam}</p>;
 };
 
 ReactDOM.render(
