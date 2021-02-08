@@ -28,7 +28,6 @@ const App = () => {
   ];
   return (
   <>
-  {GetHello()}
 
   {showDislikes ?
     <ul>
@@ -44,7 +43,7 @@ const App = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <GetHello/>
+    <GetHello />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
