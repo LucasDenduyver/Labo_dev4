@@ -8,8 +8,14 @@ const divStyle = {
 };
 
 const App = () => {
+  const list = [
+    "pasta bolognese",
+    "pizza",
+    "chinees"
+  ];
   const naam = "Lucas";
   return <p style={divStyle}>Ik ben {naam}</p>;
+  //return <ul>{list.map(item => <li key={item}>item</li>)}</ul>;
 };
 
 ReactDOM.render(
