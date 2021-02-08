@@ -14,8 +14,13 @@ const App = () => {
     "chinees"
   ];
   const naam = "Lucas";
-  return <p style={divStyle}>Ik ben {naam}</p>;
-  //return <ul>{list.map(item => <li key={item}>item</li>)}</ul>;
+  return (
+  <>
+  <p style={divStyle}>Ik <span className="name">ben </span>{naam}</p>
+  <ul>{list.map(item =>
+    <li key={item}> {item} </li>)}
+  </ul>
+  </>);
 };
 
 ReactDOM.render(
