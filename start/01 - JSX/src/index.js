@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
-const showDislikes = true;
+const showDislikes = false;
 
 const divStyle = {
   color: 'blue',
@@ -28,15 +28,15 @@ const App = () => {
   <>
   <p style={divStyle}>Ik <span className="name">ben </span>{naam}</p>
 
-  
+  {showDislikes ?
     <ul>
       {favFood.map(item =><li key={item}> {item} </li>)}
     </ul>
-    {showDislikes ? (
+    :
     <ul>
       {badFood.map(item =><li key={item}> {item} </li>)}
   </ul>
-    ) : null}
+  }
   </>);
 };
 
